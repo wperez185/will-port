@@ -1,0 +1,249 @@
+body {
+  background-color: #b7b7b7;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  margin-top: 50px;
+}
+li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.text {
+  text-align: center;
+  margin: 0;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.row {
+  margin-top: 25px;
+}
+.sidebar {
+  background-color: #000;
+  width: 15%;
+  height: 620px;
+  float: left;
+}
+.copyright {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+.main {
+  border: 10px solid #fff;
+  height: 600px;
+  background-image: url("../images/IMG_2936.PNG");
+  background-repeat: no-repeat;
+  background-size: 769px 600px;
+  width: 82%;
+  /*opacity: 0.3;*/
+  float: left;
+}
+.main-about {
+  border: 10px solid #fff;
+  height: 600px;
+  background-image: url("../images/IMG_2135.png");
+  background-repeat: no-repeat;
+  background-size: 769px 600px;
+  width: 82%;
+  opacity: 0.5;
+  float: left
+}
+.main-projects {
+  border: 10px solid #fff;
+  height: 600px;
+  width: 82%;
+  float: left
+}
+
+/**************************************************************************
+                        Skills Section
+***************************************************************************/
+
+#progress-html{
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+#progress-css{
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+#progress-javascript{
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+#progress-react{
+  -webkit-animation-name: progress-react;
+  animation-name: progress-react;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+#progress-node{
+  -webkit-animation-name: progress-node;
+  animation-name: progress-node;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+#progress-ruby{
+  -webkit-animation-name: progress-ruby;
+  animation-name: progress-ruby;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.skills-bar-container{
+  list-style: none;
+  margin: 6% auto;
+  min-width: 300px;
+  padding: 1% 0 1%;
+  position: relative;
+  width: 45%;
+}
+.skills-bar-container li{
+  background: #555;
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 30px;
+  -moz-border-radius: 5px;
+  position: relative;
+  -webkit-border-radius: 5px;
+  width: 100%;
+}
+.skills-bar-container label{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 10px;
+  position: relative;
+}
+.skills-bar-container .percent{
+  color: #fff;
+  font-size: 14px;
+  float: right;
+}
+.skills {
+  background-color: #0B3C5D;
+  margin-top: -3%;
+  height: 595px;
+}
+.my-skills {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  padding-top: 3%;
+  text-align: center;
+}
+.progressbar{
+  border-radius: 5px;
+  height: 100%;
+  position:absolute;
+  width:0%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.progressred {
+  background-color: #c0392b;
+}
+.progressblue {
+  background-color: #1199ff;
+}
+.progresspurple {
+  background-color: #9b59b6;
+}
+.progressorange {
+  background-color: orange;
+}
+.progressgreen {
+  background-color: #27ae60;
+}
+.progresswhite {
+  background-color: #fff;
+}
+@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
+@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+@-webkit-keyframes progress-ract{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
+
+@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
+@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 50%;}}
+@-moz-keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
+@-moz-keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
+
+@keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
+@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+@keyframes progress-react{0%{width: 0%;} 100%{ width: 50%;}}
+@keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
+@keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
+
+/**************************************************************************
+                        Project Section
+***************************************************************************/
+h1.project {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+li.list {
+  margin-left: 2px;
+}
+.projects {
+  margin-top: 0;
+}
+.project {
+  background-color: #1D2731;
+  color: #0B3C5D;
+  padding-top: 5%;
+  font-size: 21px;
+  text-align: center;
+  width: 100%;
+}
+.iphone1, .iphone2, .iphone3, .iphone4, .iphone5, .iphone6, .iphone7  {
+  background-color: #1D2731;
+  opacity: 1;
+  width: 100%;
+  margin: 0 -14px;
+}
+.row1 {
+    display: inline-flex;
+    padding: 7px;
+    margin-left: 5px;
+    margin-top: -14px;
+    list-style-type: none;
+    width: 100%;
+}
+.row2 {
+  display: inline-flex;
+  list-style-type: none;
+  width: 100%;
+  margin-left: 5px;
+  margin-top: -20px;
+  padding: 7px;
+}
