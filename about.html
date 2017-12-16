@@ -6,12 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="images/wp-logo.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>About</title>
 </head>
-<body>
-  <div class="container-fluid">
+<header>
+  <!-- <nav class="navbar navbar-inverse navbar-static-top example-8"> -->
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+  <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.PNG" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="skills.html">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<body class="body-bg">
     <div class="row">
-      <div class="sidebar">
+      <div class="sidebar hide">
         <img class="logo" src="./images/logo.PNG" alt="logo">
         <p class="text">William</p>
         <p class="text">Perez</p>
@@ -27,7 +56,7 @@
       </div>
       <div class="main-about">
         <section class="about" id="about">
-           <h1 class="wow fadeInDownBig me" data-wow-offset="60"> Learn more about me </h1>
+           <h1 class="me"> Learn more about me </h1>
            <!-- <img src="images/IMG_2135.png" class="wow bounceIn photo" alt="William Perez"> -->
            <p class="about-me"> Hello my name is William Perez. I enjoy coding especially when you see all the amazing projects you can build. I am not a coding ninja yet but with dedication and effort I will achieve that goal. <blockquote>  "Nothing worth having was ever achieved without effort" — Theodore Roosevelt </blockquote> </p>
            <p class="about-me"> I would like to make apps to help people in any way possible. I feel very fortunate to have met many smart and caring people that helped me in my journey to learning web development and I think one way to appreciate is giving back to other people. <blockquote>
@@ -36,7 +65,10 @@
      </section>
       </div>
     </div>
-  </div>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>
