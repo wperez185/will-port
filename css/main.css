@@ -10,7 +10,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
 }
 .row {
   margin: 0 !important;
@@ -45,16 +45,43 @@ a {
   height: 670px;
   background-image: url("../images/IMG_2936.PNG");
   background-repeat: no-repeat;
-  background-size: 356px 820px;
+  background-size: 100% 820px;
   width: 100%;
   /*opacity: 0.3;*/
   float: left;
 }
-@media (min-width : 378px) and (max-width : 465px) {
+@media (min-width : 769px) and (max-width : 1200px) {
+.navbar {
+  display: none!important;
+}
+.sidebar {
+  display: block;
+}
 .main {
-  background-size: 450px 820px;
+  height: 620px;
+  width: 70%;
+}
+.logo {
+   display: block;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+ul {
+  margin: 0;
+}
+li {
+  text-align: center;
+}
+.hr {
+  color: #fff !important;
+  width: 50%;
+  border-top: solid;
 }
 }
+/*@media (min-width: 921px) and (max-width : 1200px) {
+
+}*/
+
 /**************************************************************************
                         Sidebar Section
 ***************************************************************************/
@@ -130,7 +157,7 @@ blockquote {
   height: 790px;
   background-image: url("../images/IMG_2135.png");
   background-repeat: no-repeat;
-  background-size: 356px 820px;
+  background-size: 100% 820px;
   width: 100%;
   float: left
 }
@@ -142,6 +169,12 @@ blockquote {
 .about-me {
   padding: 20px;
 }
+@media (min-width : 769px) and (max-width : 1200px) {
+.main-about {
+  height: 620px;
+  width: 70%;
+}
+}
 
 /**************************************************************************
                         Skills Section
@@ -149,7 +182,7 @@ blockquote {
 .main-skills {
   border: 10px solid #fff;
   height: 605px;
-  background-size: 356px 820px;
+  background-size: 100% 820px;
   width: 100%;
   float: left;
 }
@@ -283,6 +316,13 @@ blockquote {
 @keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
 @keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
 
+@media (min-width : 769px) and (max-width : 1200px) {
+.main-skills {
+  height: 620px;
+  width: 70%;
+}
+}
+
 /**************************************************************************
                         Contact Section
 ***************************************************************************/
@@ -292,7 +332,7 @@ blockquote {
   .main-contact {
     border: 10px solid #fff;
     height: 605px;
-    background-size: 356px 820px;
+    background-size: 100% 820px;
     width: 100%;
     float: left;
   }
@@ -351,8 +391,15 @@ blockquote {
 	  padding:4px 7px;
     margin-top: 20px;
 	  background:#fff;
+    margin-left: 10px;
 	}
 
+@media (min-width : 769px) and (max-width : 1200px) {
+.main-contact {
+  height: 620px;
+  width: 70%;
+}
+}
 
 /**************************************************************************
                         Project Section
@@ -360,7 +407,7 @@ blockquote {
 .main-projects {
   border: 10px solid #fff;
   height: 605px;
-  background-size: 356px 820px;
+  background-size: 100% 820px;
   width: 100%;
   float: left;
 }
@@ -406,4 +453,11 @@ li.list {
   margin-left: 5px;
   margin-top: -20px;
   padding: 7px;
+}
+
+@media (min-width : 769px) and (max-width : 1200px) {
+.main-projects {
+  height: 620px;
+  width: 70%;
+}
 }
