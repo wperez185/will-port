@@ -92,8 +92,8 @@ li {
   float: left;
 }
 .copyright {
-  margin-top: 50px;
-  font-size: 12px;
+  margin-top: 40px;
+  font-size: 15px;
   text-align: center;
 }
 /**************************************************************************
@@ -254,7 +254,7 @@ blockquote {
 }
 .skills {
   background-color: #000;
-  height: 595px;
+  height: 600px;
 }
 .my-skills {
   color: #fff;
@@ -267,6 +267,7 @@ blockquote {
   border-radius: 5px;
   height: 100%;
   position:absolute;
+  left: 0;
   width:0%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -298,7 +299,7 @@ blockquote {
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-@-webkit-keyframes progress-ract{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 50%;}}
 @-webkit-keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
 @-webkit-keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
 
@@ -332,7 +333,6 @@ blockquote {
   .main-contact {
     border: 10px solid #fff;
     height: 605px;
-    background-size: 100% 820px;
     width: 100%;
     float: left;
   }
@@ -357,9 +357,9 @@ blockquote {
 	div.box label{
 	width:100%;
 	display: block;
-	background:#1C1C1C;
+	background:#222;
 	border-top:1px solid #262626;
-	border-bottom:1px solid #161712;
+	/*border-bottom:1px solid #161712;*/
 	padding:10px 0 10px 0;
 	}
 	div.box label span{
@@ -379,25 +379,27 @@ blockquote {
 	}
 
 	div.box .message {
-	width:95%;
+	width:60%;
   margin-left: 8px;
   background: #b7b7b7;
 	overflow:hidden;
-	height:150px;
+	height:100px;
 	}
 
 	div.box .button {
-    color: #000;
+    color: #222;
 	  padding:4px 7px;
     margin-top: 20px;
 	  background:#fff;
     margin-left: 10px;
+    display: block;
 	}
 
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-contact {
   height: 620px;
   width: 70%;
+  background-color: #222;
 }
 }
 
@@ -460,4 +462,11 @@ li.list {
   height: 620px;
   width: 70%;
 }
+}
+/**************************************************************************
+                        Social Media Section
+***************************************************************************/
+.social {
+    display: inline-flex;
+    margin-left: 40px;
 }
