@@ -20,7 +20,7 @@ a {
   padding: 0;
 }
 .body-bg {
-  background-color: #b7b7b7;
+  background-color: #000;
   color: #fff;
 }
 .title {
@@ -34,21 +34,27 @@ a {
 .text {
   text-align: center;
   margin: 0;
+  font-size: 20px;
 }
 .logo {
   width: 50px;
   height: 50px;
   background: #fff;
 }
+img.main-logo {
+  width: 80%;
+  max-width: 400px;
+}
+img.social-img {
+  height: 35px;
+}
 .main {
-  border: 10px solid #fff;
-  height: 670px;
-  background-image: url("../images/IMG_2936.PNG");
+  /*border: 10px solid #fff;*/
+  /*background-image: url("../images/IMG_2936.PNG");
   background-repeat: no-repeat;
   background-size: 100% 820px;
   width: 100%;
-  /*opacity: 0.3;*/
-  float: left;
+  float: left;*/
 }
 @media (min-width : 769px) and (max-width : 1200px) {
 .navbar {
@@ -58,7 +64,8 @@ a {
   display: block;
 }
 .main {
-  height: 620px;
+  border: 10px solid #fff;
+  /*height: 620px;*/
   width: 70%;
 }
 .logo {
@@ -78,17 +85,42 @@ li {
   border-top: solid;
 }
 }
-/*@media (min-width: 921px) and (max-width : 1200px) {
-
-}*/
-
+@media (min-width : 1201px) {
+.sidebar {
+  display: block;
+}
+.navbar {
+  display: none!important;
+}
+.main {
+  border: 10px solid #fff;
+  /*height: 620px;*/
+  width: 70%;
+}
+.logo {
+   display: block;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+ul {
+  margin: 0;
+}
+li {
+  text-align: center;
+}
+.hr {
+  color: #fff !important;
+  width: 50%;
+  border-top: solid;
+}
+}
 /**************************************************************************
                         Sidebar Section
 ***************************************************************************/
 .sidebar {
   background-color: #000;
   width: 30%;
-  height: 620px;
+  /*height: 620px;*/
   float: left;
 }
 .copyright {
@@ -96,6 +128,7 @@ li {
   font-size: 15px;
   text-align: center;
 }
+
 /**************************************************************************
                         NavBar Section
 ***************************************************************************/
@@ -149,20 +182,34 @@ a.nav-link {
 /**************************************************************************
                         About Section
 ***************************************************************************/
+.about-body-bg {
+  background-color: #000;
+  color: #fff;
+}
 blockquote {
   padding: 20px;
 }
 .main-about {
   border: 10px solid #fff;
-  height: 790px;
+  text-align: center;
+  /*height: 790px;
   background-image: url("../images/IMG_2135.png");
   background-repeat: no-repeat;
   background-size: 100% 820px;
   width: 100%;
-  float: left
+  float: left*/
+}
+.mobile-photo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.photo {
+  float: right;
+  margin-top: 70px;
+  margin-right: 20px;
 }
 .me {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   margin-top: 10px;
 }
@@ -171,9 +218,51 @@ blockquote {
 }
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-about {
-  height: 620px;
+  /*height: 620px;*/
   width: 70%;
 }
+.mobile-photo {
+  display: none;
+}
+.photo {
+  display: block;
+}
+}
+@media (min-width : 1201px) {
+  .about-body-bg {
+    background-color: #000;
+    color: #fff;
+  }
+  blockquote {
+    padding: 20px;
+  }
+  .main-about {
+    border: 10px solid #fff;
+    text-align: center;
+    width: 63%;
+    /*height: 790px;
+    background-image: url("../images/IMG_2135.png");
+    background-repeat: no-repeat;
+    background-size: 100% 820px;
+    float: left*/
+  }
+  .mobile-photo {
+    display: none;
+  }
+  .photo {
+    display: block;
+    float: right;
+    margin-top: 70px;
+    margin-right: 20px;
+  }
+  .me {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about-me {
+    padding: 20px;
+  }
 }
 
 /**************************************************************************
@@ -181,7 +270,7 @@ blockquote {
 ***************************************************************************/
 .main-skills {
   border: 10px solid #fff;
-  height: 605px;
+  /*height: 605px;*/
   background-size: 100% 820px;
   width: 100%;
   float: left;
@@ -222,19 +311,41 @@ blockquote {
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
 }
-.skills-bar-container{
+/*.skills-bar-container{
   list-style: none;
   margin: 6% auto;
   min-width: 300px;
   padding: 1% 0 1%;
   position: relative;
   width: 45%;
+}*/
+ul.skills-text {
+  float: left;
+  margin-left: 10px;
+  width: 75%;
+}
+.skills-info {
+  width: 60%;
+  margin-top: 16px;
+}
+.info {
+  border-bottom: 1px solid #fff;
+}
+span.skills-desc {
+  float: right;
+}
+.skills-bar-container{
+  list-style: none;
+  position: relative;
+  width: 35%;
+  float: right;
+  margin-right: 10px;
 }
 .skills-bar-container li{
   background: #555;
   border-radius: 5px;
   height: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   -moz-border-radius: 5px;
   position: relative;
   -webkit-border-radius: 5px;
@@ -254,7 +365,10 @@ blockquote {
 }
 .skills {
   background-color: #000;
-  height: 600px;
+  /*height: 600px;*/
+}
+.skills-text li {
+  text-align: left;
 }
 .my-skills {
   color: #fff;
@@ -319,11 +433,15 @@ blockquote {
 
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-skills {
-  height: 620px;
+  /*height: 620px;*/
   width: 70%;
 }
 }
-
+@media (min-width : 1201px) {
+.main-skills {
+  width: 70%;
+}
+}
 /**************************************************************************
                         Contact Section
 ***************************************************************************/
@@ -332,7 +450,7 @@ blockquote {
 	form,input,select,textarea{margin:0; padding:0; color:#fff;}*/
   .main-contact {
     border: 10px solid #fff;
-    height: 605px;
+    /*height: 605px;*/
     width: 100%;
     float: left;
   }
@@ -340,8 +458,8 @@ blockquote {
 	div.box{
 	margin:0 auto;
 	 height: 585px;
-	background:#222;
-	border:1px solid #262626;
+	background:#000;
+	/*border:1px solid #262626;*/
 	}
 
 	div.box h1{
@@ -357,14 +475,14 @@ blockquote {
 	div.box label{
 	width:100%;
 	display: block;
-	background:#222;
+	background:#000;
 	border-top:1px solid #262626;
 	/*border-bottom:1px solid #161712;*/
 	padding:10px 0 10px 0;
 	}
 	div.box label span{
 	display: block;
-	color:#bbb;
+	color:#fff;
 	font-size:12px;
 	float:left;
 	width:100px;
@@ -375,13 +493,13 @@ blockquote {
 	div.box .input_text{
 	padding:10px 10px;
 	width:200px;
-	background: #b7b7b7;
+	background: #fff;
 	}
 
 	div.box .message {
 	width:60%;
   margin-left: 8px;
-  background: #b7b7b7;
+  background: #fff;
 	overflow:hidden;
 	height:100px;
 	}
@@ -397,18 +515,22 @@ blockquote {
 
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-contact {
-  height: 620px;
+  /*height: 620px;*/
   width: 70%;
-  background-color: #222;
+  background-color: #000;
 }
 }
-
+@media (min-width : 1201px) {
+.main-contact {
+  width: 70%;
+}
+}
 /**************************************************************************
                         Project Section
 ***************************************************************************/
 .main-projects {
   border: 10px solid #fff;
-  height: 605px;
+  /*height: 605px;*/
   background-size: 100% 820px;
   width: 100%;
   float: left;
@@ -459,7 +581,12 @@ li.list {
 
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-projects {
-  height: 620px;
+  /*height: 620px;*/
+  width: 70%;
+}
+}
+@media (min-width : 1201px) {
+.main-projects {
   width: 70%;
 }
 }
