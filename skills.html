@@ -86,9 +86,10 @@
         <div class="skills-info-container">
           <div class="skills-info">
             <ul class="skills-text">
-            <li class="html">HTML5 <span class="skills-desc">2 years</span><p class="info">This is a test of the descriptions that i know.</p></li>
+            <li class="html">HTML5 <span class="skills-desc">2 years</span><p class="info">I started with little knowledge on coding and starting with HTML was my first step to coding.</p>
+              <p class="info2">I enjoy that I can code a website from scratch and I use semantic elements with proper syntax implemtation.</p></li>
             <li class="css">CSS3 <span class="skills-desc">2 years</span><p class="info">This is a test of the descriptions that i know.</p></li>
-            <li class="js">Javascript/jQuery <span class="skills-desc">2 years</span><p class="info">This is a test of the descriptions that i know.</p></li>
+            <li class="js">JS/jQuery <span class="skills-desc">2 years</span><p class="info">This is a test of the descriptions that i know.</p></li>
             <li class="react">React <span class="skills-desc">1 year</span><p class="info">This is a test of the descriptions that i know.</p></li>
             <li class="nodejs">NodeJS <span class="skills-desc">1 year</span><p class="info">This is a test of the descriptions that i know.</p></li>
             <li class="ror">ROR <span class="skills-desc">1 year</span></li>
@@ -136,5 +137,10 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="./js/skills.js"></script>
+  <script>
+  $(".info").click(function() {
+     $(".info2").show();
+});
+</script>
 </body>
 </html>
