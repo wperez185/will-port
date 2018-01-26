@@ -49,12 +49,8 @@ img.social-img {
   height: 35px;
 }
 .main {
-  /*border: 10px solid #fff;*/
-  /*background-image: url("../images/IMG_2936.PNG");
-  background-repeat: no-repeat;
-  background-size: 100% 820px;
+  text-align: center;
   width: 100%;
-  float: left;*/
 }
 @media (min-width : 769px) and (max-width : 1200px) {
 .navbar {
@@ -66,7 +62,7 @@ img.social-img {
 .main {
   border: 10px solid #fff;
   /*height: 620px;*/
-  width: 70%;
+  width: 70%!important;
 }
 .logo {
    display: block;
@@ -205,8 +201,7 @@ blockquote {
 }
 .photo {
   float: right;
-  margin-top: 70px;
-  margin-right: 20px;
+  margin: 70px 20px 10px 15px;
 }
 .me {
   font-size: 28px;
@@ -252,8 +247,7 @@ blockquote {
   .photo {
     display: block;
     float: right;
-    margin-top: 70px;
-    margin-right: 20px;
+    margin: 70px 20px 10px 15px;
   }
   .me {
     font-size: 28px;
@@ -328,18 +322,22 @@ ul.skills-text {
   width: 60%;
   margin-top: 16px;
 }
-.info {
+.info, .info2 {
   border-bottom: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 200;
 }
 span.skills-desc {
   float: right;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .skills-bar-container{
   list-style: none;
   position: relative;
   width: 35%;
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .skills-bar-container li{
   background: #555;
@@ -368,6 +366,8 @@ span.skills-desc {
   /*height: 600px;*/
 }
 .skills-text li {
+  font-size: 20px;
+  font-weight: 500;
   text-align: left;
 }
 .my-skills {
@@ -456,18 +456,18 @@ span.skills-desc {
   }
 
 	div.box{
-	margin:0 auto;
-	 height: 585px;
-	background:#000;
+	 margin:0 auto;
+	 /*height: 585px;*/
+	 background:#000;
 	/*border:1px solid #262626;*/
 	}
 
 	div.box h1{
 	color:#fff;
   text-align: center;
-	font-size:18px;
-	text-transform:uppercase;
-	padding:5px 0 5px 5px;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding: 15px 0 5px 5px;
 	border-bottom:1px solid #161712;
 	border-top:1px solid #161712;
 	}
@@ -478,15 +478,15 @@ span.skills-desc {
 	background:#000;
 	border-top:1px solid #262626;
 	/*border-bottom:1px solid #161712;*/
-	padding:10px 0 10px 0;
+	padding:10px 0 10px 15px;
 	}
 	div.box label span{
 	display: block;
 	color:#fff;
-	font-size:12px;
+	font-size:15px;
 	float:left;
 	width:100px;
-	text-align:right;
+	/*text-align:right;*/
 	padding:5px 20px 0 0;
 	}
 
@@ -511,6 +511,7 @@ span.skills-desc {
 	  background:#fff;
     margin-left: 10px;
     display: block;
+    font-size: 21px;
 	}
 
 @media (min-width : 769px) and (max-width : 1200px) {
@@ -520,9 +521,98 @@ span.skills-desc {
   background-color: #000;
 }
 }
+@media (min-width : 480px) and (max-width : 575px) {
+  div.box label span {
+    font-size: 23px;
+    width: 140px;
+    margin-left: 15px;
+  }
+  div.box .message {
+    width: 43%;
+    height: 85px;
+}
+div.box h1{
+  font-size: 25px;
+}
+}
+@media (min-width: 576px) and (max-width : 620px) {
+  div.box label {
+    padding: 20px 0px 5px 15px;
+    margin-left: 45px;
+    width: 70%;
+}
+div.box h1{
+  font-size: 28px;
+}
+div.box .message {
+  width: 52%;
+  height: 90px;
+}
+}
+@media (min-width: 621px) and (max-width : 768px) {
+  div.box label {
+    padding: 20px 0px 5px 15px;
+    margin-left: 150px;
+    width: 70%;
+}
+div.box h1{
+  font-size: 30px;
+}
+div.box .message {
+  width: 42%;
+  height: 90px;
+}
+div.box label span {
+  font-size: 21px;
+  padding: 0;
+}
+}
+@media (min-width: 769px) and (max-width : 920px) {
+div.box label {
+    width: 55%;
+    display: block;
+    background: #000;
+    border-top: 1px solid #262626;
+    /* border-bottom: 1px solid #161712; */
+    padding: 10px 0 10px 15px;
+    margin-left: 100px;
+}
+div.box h1{
+  font-size: 30px;
+}
+div.box label span {
+    font-size: 18px;
+}
+}
+@media (min-width: 921px) and (max-width : 1200px) {
+div.box label {
+    width: 55%;
+    padding: 10px 0 10px 15px;
+    margin-left: 100px;
+}
+div.box h1{
+  font-size: 30px;
+}
+div.box label span {
+    font-size: 18px;
+}
+}
 @media (min-width : 1201px) {
 .main-contact {
   width: 70%;
+}
+
+div.box label {
+    width: 55%;
+    padding: 10px 0 10px 15px;
+    margin-left: 200px;
+}
+div.box h1{
+  font-size: 30px;
+}
+div.box label span {
+    font-size: 18px;
+}
 }
 }
 /**************************************************************************
