@@ -1,13 +1,13 @@
 setTimeout(function() {
-  $('#html-percent').html('100%');
+  $('.progress-bar-js').html('100%');
 },2800);
 
 setTimeout(function() {
-  $('#css-percent').html('90%');
+  $('.progress-bar-html').html('90%');
 },3500);
 
 setTimeout(function() {
-  $('#javascript-percent').html('75%');
+  $('.progress-bar-css').html('75%');
 },4200);
 
 setTimeout(function() {
