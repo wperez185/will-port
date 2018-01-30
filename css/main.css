@@ -303,6 +303,7 @@ blockquote {
     border-bottom: 3px solid #fff;
     margin-top: 5px;
     margin-left: 10px;
+    padding-bottom: 30px;
 }
 
 .main-skills {
@@ -311,98 +312,326 @@ blockquote {
   width: 100%;
   float: left;
 }
-#progress-html{
-  -webkit-animation-name: progress-html;
-  animation-name: progress-html;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+
+.progress-radial {
+  float: right;
+  position: relative;
+  width: 100px;
+  bottom: 15px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
 }
-#progress-css{
-  -webkit-animation-name: progress-css;
-  animation-name: progress-css;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
 }
-#progress-javascript{
-  -webkit-animation-name: progress-javascript;
-  animation-name: progress-javascript;
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(90deg, #ff6347 50%, #2f3439 50%, #2f3439);
 }
-#progress-react{
-  -webkit-animation-name: progress-react;
-  animation-name: progress-react;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
+
+.progress-5 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(108deg, #ff6347 50%, #2f3439 50%, #2f3439);
 }
-#progress-node{
-  -webkit-animation-name: progress-node;
-  animation-name: progress-node;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+
+.progress-10 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #ff6347 50%, #2f3439 50%, #2f3439);
 }
-#progress-ruby{
-  -webkit-animation-name: progress-ruby;
-  animation-name: progress-ruby;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+
+.progress-15 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(144deg, #ff6347 50%, #2f3439 50%, #2f3439);
 }
-ul.skills-text {
+
+.progress-20 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-30 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(216deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-40 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-45 {
+  background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(252deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-55 {
+  background-image: linear-gradient(-72deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-60 {
+  background-image: linear-gradient(-54deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-65 {
+  background-image: linear-gradient(-36deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-70 {
+  background-image: linear-gradient(-18deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-80 {
+  background-image: linear-gradient(18deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-85 {
+  background-image: linear-gradient(36deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-90 {
+  background-image: linear-gradient(54deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-95 {
+  background-image: linear-gradient(72deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #ff6347 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+
+
+.set-size {
+  font-size: 10em;
+}
+.charts-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.pie-wrapper {
+  height: 1em;
+  width: 1em;
   float: left;
-  margin-left: 10px;
-  width: 75%;
+  margin: 15px;
+  position: relative;
 }
+.pie-wrapper:nth-child(3n+1) {
+  clear: both;
+}
+.pie-wrapper .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .label {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.4em;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 2.6em;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.4em;
+}
+.pie-wrapper .label .smaller {
+  color: #bdc3c7;
+  font-size: .45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+.pie-wrapper .shadow {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #bdc3c7;
+  border-radius: 50%;
+}
+.pie-wrapper.style-2 .label {
+  background: none;
+  color: #7f8c8d;
+}
+.pie-wrapper.style-2 .label .smaller {
+  color: #bdc3c7;
+}
+.pie-wrapper.progress-30 .pie .right-side {
+  display: none;
+}
+.pie-wrapper.progress-30 .pie .half-circle {
+  border-color: #3498db;
+}
+.pie-wrapper.progress-30 .pie .left-side {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+.pie-wrapper.progress-60 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-60 .pie .right-side {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.pie-wrapper.progress-60 .pie .half-circle {
+  border-color: #9b59b6;
+}
+.pie-wrapper.progress-60 .pie .left-side {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+}
+.pie-wrapper.progress-90 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-90 .pie .right-side {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.pie-wrapper.progress-90 .pie .half-circle {
+  border-color: #e67e22;
+}
+.pie-wrapper.progress-90 .pie .left-side {
+  -webkit-transform: rotate(324deg);
+          transform: rotate(324deg);
+}
+.pie-wrapper.progress-45 .pie .right-side {
+  display: none;
+}
+.pie-wrapper.progress-45 .pie .half-circle {
+  border-color: #1abc9c;
+}
+.pie-wrapper.progress-45 .pie .left-side {
+  -webkit-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+.pie-wrapper.progress-75 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-75 .pie .right-side {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.pie-wrapper.progress-75 .pie .half-circle {
+  border-color: #8e44ad;
+}
+.pie-wrapper.progress-75 .pie .left-side {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.pie-wrapper.progress-95 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-95 .pie .right-side {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.pie-wrapper.progress-95 .pie .half-circle {
+  border-color: #e74c3c;
+}
+.pie-wrapper.progress-95 .pie .left-side {
+  -webkit-transform: rotate(342deg);
+          transform: rotate(342deg);
+}
+.pie-wrapper--solid {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pie-wrapper--solid:before {
+  border-radius: 0 100% 100% 0%;
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.pie-wrapper--solid .label {
+  background: transparent;
+}
+.pie-wrapper--solid.progress-65 {
+  background: -webkit-linear-gradient(left, #e67e22 50%, #34495e 50%);
+  background: linear-gradient(to right, #e67e22 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-65:before {
+  background: #e67e22;
+  -webkit-transform: rotate(126deg);
+          transform: rotate(126deg);
+}
+.pie-wrapper--solid.progress-25 {
+  background: -webkit-linear-gradient(left, #9b59b6 50%, #34495e 50%);
+  background: linear-gradient(to right, #9b59b6 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-25:before {
+  background: #34495e;
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+.pie-wrapper--solid.progress-88 {
+  background: -webkit-linear-gradient(left, #3498db 50%, #34495e 50%);
+  background: linear-gradient(to right, #3498db 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-88:before {
+  background: #3498db;
+  -webkit-transform: rotate(43.2deg);
+          transform: rotate(43.2deg);
+}
+
 .skills-info {
-  width: 60%;
+  width: 67%;
   margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.info, .info2 {
-  border-bottom: 1px solid #fff;
-  font-size: 18px;
-  font-weight: 200;
-}
+
 span.skills-desc {
   float: right;
   font-size: 18px;
   margin-top: 10px;
 }
-.skills-bar-container{
-  list-style: none;
-  position: relative;
-  width: 35%;
-  float: right;
-  margin-right: 20px;
-}
-.skills-bar-container li{
-  background: #555;
-  border-radius: 5px;
-  height: 5px;
-  margin-bottom: 50px;
-  -moz-border-radius: 5px;
-  position: relative;
-  -webkit-border-radius: 5px;
-  width: 100%;
-}
-.skills-bar-container label{
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-  margin-left: 10px;
-  position: relative;
-}
-.skills-bar-container .percent{
-  color: #fff;
-  font-size: 14px;
-  float: right;
-}
-.skills {
-  background-color: #000;
-}
-.skills-text li {
-  font-size: 20px;
-  font-weight: 500;
-  text-align: left;
-}
+
 .my-skills {
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -410,59 +639,7 @@ span.skills-desc {
   padding-top: 3%;
   text-align: center;
 }
-.progressbar{
-  border-radius: 5px;
-  height: 100%;
-  position:absolute;
-  left: 0;
-  width:0%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
-.progressred {
-  background-color: #c0392b;
-}
-.progressblue {
-  background-color: #1199ff;
-}
-.progresspurple {
-  background-color: #9b59b6;
-}
-.progressorange {
-  background-color: orange;
-}
-.progressgreen {
-  background-color: #27ae60;
-}
-.progresswhite {
-  background-color: #fff;
-}
-@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-@-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 50%;}}
-@-webkit-keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
-@-webkit-keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
 
-@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 50%;}}
-@-moz-keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
-@-moz-keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
-
-@keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-@keyframes progress-react{0%{width: 0%;} 100%{ width: 50%;}}
-@keyframes progress-node{0%{width: 0%;} 100%{ width: 50%;}}
-@keyframes progress-ruby{0%{width: 0%;} 100%{ width: 40%;}}
 
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-skills {
