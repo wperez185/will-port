@@ -339,7 +339,21 @@ blockquote {
   line-height: 60px;
   font-size: 16px;
 }
-
+.html {
+  background-image: linear-gradient(54deg, #ffd83a 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #f06529 50%, #2f3439 50%, #2f3439);
+}
+.css {
+  background-image: linear-gradient(54deg, #2965f1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #2965f1 50%, #2f3439 50%, #2f3439)!important;
+}
+.js {
+  background-image: linear-gradient(-18deg, #ffd83a 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd83a 50%, #2f3439 50%, #2f3439)!important;
+}
+.react {
+  background-image: linear-gradient(-90deg, #61dbfb 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #61dbfb 50%, #2f3439 50%, #2f3439)!important;
+}
+.nodejs {
+  background-image: linear-gradient(-54deg, #80bd01 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #80bd01 50%, #2f3439 50%, #2f3439)!important;
+}
 /* -------------------------------------
  * Mixin for progress-% class
  * ------------------------------------- */
