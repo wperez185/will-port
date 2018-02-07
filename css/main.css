@@ -863,9 +863,8 @@ div.box label span {
     text-align: center;
 }
 .projects-title {
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 25px;
+  font-size: 23px;
+  margin: 25px auto;
 }
 .img-header {
     background: #fff;
