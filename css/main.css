@@ -667,17 +667,40 @@ span.skills-desc {
 }
 }
 /**************************************************************************
-                        Contact Section
+                       Contact Section
 ***************************************************************************/
 /**{ margin:0; padding:0;}
 	body{ font:100% normal Arial, Helvetica, sans-serif; background:#161712;}
 	form,input,select,textarea{margin:0; padding:0; color:#fff;}*/
-  .main-contact {
-    border: 10px solid #fff;
-    /*height: 605px;*/
-    width: 100%;
-    /*float: left;*/
-  }
+ form {
+   max-width: 20rem;
+   margin: 0 auto;
+ }
+ label {
+   font-weight: bold;
+ }
+ input,
+ textarea {
+   display: block;
+   width: 100%;
+   margin-bottom: 1rem;
+   padding: 0.3em;
+ }
+ textarea {
+   min-height: 3em;
+ }
+ div.box button {
+   -webkit-appearance: button;
+   font-size: 21px;
+   margin-top: 10px;
+   margin-left: 120px;
+}
+ .main-contact {
+   border: 10px solid #fff;
+   /*height: 605px;*/
+   width: 100%;
+   /*float: left;*/
+ }
 
 	div.box{
 	 margin:0 auto;
@@ -688,10 +711,10 @@ span.skills-desc {
 
 	div.box h1{
 	color:#fff;
-  text-align: center;
-  font-size: 23px;
-  text-transform: uppercase;
-  padding: 15px 0 5px 5px;
+ text-align: center;
+ font-size: 23px;
+ text-transform: uppercase;
+ padding: 15px 0 5px 5px;
 	border-bottom:1px solid #161712;
 	border-top:1px solid #161712;
 	}
@@ -701,7 +724,8 @@ span.skills-desc {
 	display: block;
 	background:#000;
 	border-top:1px solid #262626;
-	/*border-bottom:1px solid #161712;*/
+	margin: 0 auto;
+ text-align: center;
 	padding:10px 0 10px 15px;
 	}
 	div.box label span{
@@ -710,7 +734,6 @@ span.skills-desc {
 	font-size:15px;
 	float:left;
 	width:100px;
-	/*text-align:right;*/
 	padding:5px 20px 0 0;
 	}
 
@@ -722,120 +745,115 @@ span.skills-desc {
 
 	div.box .message {
 	width:60%;
-  margin-left: 8px;
-  background: #fff;
+ margin-left: 8px;
+ background: #fff;
 	overflow:hidden;
 	height:100px;
 	}
 
-	div.box .button {
-    color: #222;
+	/*div.box .button {
+   color: #222;
 	  padding:4px 7px;
-    margin-top: 20px;
+   margin-top: 20px;
 	  background:#fff;
-    margin-left: 10px;
-    display: block;
-    font-size: 21px;
-	}
+   margin-left: 10px;
+   display: block;
+   font-size: 21px;
+	}*/
 
 @media (min-width : 769px) and (max-width : 1200px) {
 .main-contact {
-  /*height: 620px;*/
-  width: 70%;
-  background-color: #000;
+ /*height: 620px;*/
+ width: 70%;
+ background-color: #000;
 }
 }
 @media (min-width : 480px) and (max-width : 575px) {
-  div.box label span {
-    font-size: 23px;
-    width: 140px;
-    margin-left: 15px;
-  }
-  div.box .message {
-    width: 43%;
-    height: 85px;
+ div.box label span {
+   font-size: 23px;
+   width: 140px;
+   margin-left: 15px;
+ }
+ div.box .message {
+   width: 43%;
+   height: 85px;
 }
 div.box h1{
-  font-size: 25px;
+ font-size: 25px;
 }
 }
 @media (min-width: 576px) and (max-width : 620px) {
-  div.box label {
-    padding: 20px 0px 5px 15px;
-    margin-left: 45px;
-    width: 70%;
+ div.box label {
+   padding: 20px 0px 5px 15px;
+   width: 70%;
 }
 div.box h1{
-  font-size: 28px;
+ font-size: 28px;
 }
 div.box .message {
-  width: 52%;
-  height: 90px;
+ width: 52%;
+ height: 90px;
 }
 }
 @media (min-width: 621px) and (max-width : 768px) {
-  div.box label {
-    padding: 20px 0px 5px 15px;
-    margin-left: 150px;
-    width: 70%;
+ div.box label {
+   padding: 20px 0px 5px 15px;
+   width: 70%;
 }
 div.box h1{
-  font-size: 30px;
+ font-size: 30px;
 }
 div.box .message {
-  width: 42%;
-  height: 90px;
+ width: 42%;
+ height: 90px;
 }
 div.box label span {
-  font-size: 21px;
-  padding: 0;
+ font-size: 21px;
+ padding: 0;
 }
 }
 @media (min-width: 769px) and (max-width : 920px) {
 div.box label {
-    width: 55%;
-    display: block;
-    background: #000;
-    border-top: 1px solid #262626;
-    /* border-bottom: 1px solid #161712; */
-    padding: 10px 0 10px 15px;
-    margin-left: 100px;
+   width: 55%;
+   display: block;
+   background: #000;
+   border-top: 1px solid #262626;
+   padding: 10px 0 10px 15px;
+
 }
 div.box h1{
-  font-size: 30px;
+ font-size: 30px;
 }
 div.box label span {
-    font-size: 18px;
+   font-size: 18px;
 }
 }
 @media (min-width: 921px) and (max-width : 1200px) {
 div.box label {
-    width: 55%;
-    padding: 10px 0 10px 15px;
-    margin-left: 100px;
+   width: 55%;
+   padding: 10px 0 10px 15px;
 }
 div.box h1{
-  font-size: 30px;
+ font-size: 30px;
 }
 div.box label span {
-    font-size: 18px;
+   font-size: 18px;
 }
 }
 @media (min-width : 1201px) {
 .main-contact {
-  width: 70%;
+ width: 70%;
 }
 
 div.box label {
-    width: 55%;
-    padding: 10px 0 10px 15px;
-    margin-left: 200px;
+   width: 55%;
+   padding: 10px 0 10px 15px;
 }
 div.box h1{
-  font-size: 30px;
+ font-size: 30px;
 }
 div.box label span {
-    font-size: 18px;
+   font-size: 18px;
 }
 }
 }
